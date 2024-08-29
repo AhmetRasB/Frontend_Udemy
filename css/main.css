@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+#navbar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 70px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+}
+
+#navbar ul li a:hover {
+
+    background: #336ea2;
+    border: black 1px solid;
+    border-radius: 4px;
+}
+
+#navbar ul li a {
+    padding: 0.75rem;
+}
+
+/*-------HOME--------*/
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid grey;
+}
+
+#home img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+
+#home .name {
+    text-align: center;
+}
+
+#home .name h2 {
+    margin-bottom: 0.75rem;
+}
+
+#home .name p {
+    opacity: 0.8;
+    font-style: italic;
+}
+
+/* #home a{
+    margin-top: 1.25rem;
+    background-color: #336ea2;
+    padding: 0.8rem 3rem;
+    border-radius: 12px;
+}
+#home a:hover{
+    background: #062e51;
+    border: 2px black solid;
+} */
+/*--------PROJECTS------------*/
+#projects .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    /* Optional: Adds some space between flex items */
+    flex-wrap: wrap;
+    /* Optional: Allows items to wrap to the next line if needed */
+}
+
+#projects .item {
+    flex: 1;
+    /* Adjust this if you want equal spacing */
+    min-width: 200px;
+    /* Adjust according to your needs */
+}
+
+#projects .items .item {
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#projects .items .item:hover {
+    color: red;
+    opacity: 0.7;
+}
+
+
+
+
+.course-info {
+    padding: 0.5rem;
+    /* Adds some padding around the text */
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    /* Adds some spacing between the text elements */
+}
+
+.courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    /* Allows items to wrap onto the next line when the screen size is reduced */
+}
+
+.course {
+    flex: 1;
+    min-width: 280px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0.5rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course {
+        max-width: 100%;
+    }
+
+    .course-image img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+.courses .course {
+    position: relative;
+}
+
+.badge {
+    background-color: red;
+    padding: 0.25rem;
+    color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+.courses .course .course-info .description{
+    letter-spacing: 1.2px;
+    margin-bottom: 0.25rem;
+    opacity: 0.6;
+}
+.courses .course .course-info .title{
+    font-weight: bold;
+}
+.courses .course .course-info .rating{
+    font-style: italic;
+}
+.center{
+    text-align: center;
+    padding: 0.50rem;
+}
